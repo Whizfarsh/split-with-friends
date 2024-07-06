@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+	--primary-color: #eed2d2;
+	--btn-bg-color: #dea6a6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Poppins";
+	font-size: 1.4rem;
+	background-color: #f7e9e9;
+}
+.App {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+	margin-right: 5%;
+}
+.bill-spliting {
+	padding: 5rem;
+	gap: 2rem;
+	display: grid;
+	grid-template-columns: 1.1fr 1.6fr;
+}
+
+button {
+	font-weight: 600;
+}
+
+.Friends-list {
+	display: flex;
+	flex-direction: column;
+}
+.btn-add {
+	align-self: flex-end;
+	margin: 1.4rem 1.6rem 1.4rem;
+}
+.friend-list {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding: 1rem;
+	margin-bottom: 1.2rem;
+}
+.active-friend {
+	background-color: var(--primary-color);
+	border-radius: 1rem;
+	transition: background-color 500ms ease-in;
+}
+.friend-img {
+	border-radius: 50%;
+}
+.uwithfriend {
+	display: flex;
+	flex-direction: column;
+}
+.name {
+	font-size: 1.6rem;
+	text-transform: capitalize;
+}
+.btn {
+	background-color: var(--btn-bg-color);
+	border: none;
+	padding: 1rem;
+	border-radius: 0.7rem;
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	margin-left: auto;
+	/* color: ; */
+}
+
+.friends-add {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primary-color);
+	padding: 2.4rem;
+	border-radius: 0.8rem;
+	margin: 1rem;
+}
+
+.friends-add label {
+	font-size: 1.8rem;
+	margin: 0.7rem 0;
+}
+.friends-add input {
+	border: none;
+	padding: 1.4rem;
+	border-radius: 1rem;
+	text-align: left;
+}
+.friends-add input:focus {
+	outline: none;
+}
+.friends-add button {
+	margin-top: 1.4rem;
+	align-self: flex-end;
+	width: 150px;
+}
+
+/* BILL SPLIT */
+.bill-split {
+	height: 35rem;
+	align-items: center;
+	padding: 4.2rem;
+
+	background-color: var(--primary-color);
+	border-radius: 1.4rem;
+}
+.bill-split h3 {
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	margin-bottom: 2.4rem;
+}
+.form {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 14rem;
+	/* padding: 3.2rem 2.4rem; */
+	gap: 1.4rem;
+}
+.form label {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+.form input,
+.form select {
+	background-color: #f7e9e9;
+	border: none;
+	text-align: center;
+	height: 2.4rem;
+}
+.form input:focus,
+.form select:focus {
+	outline: none;
+}
+
+.form button {
+	margin-top: 1.8rem;
+	font-size: 1.8rem;
+
+	grid-column: 2;
+	border: none;
+	padding: 1.2rem 1.4rem;
+	border-radius: 1rem;
+
+	background-color: var(--btn-bg-color);
+}
